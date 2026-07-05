@@ -60,5 +60,5 @@ quick first pass before running on the full tick history.
 
 ## Author
 
-Yuvraj — Quantitative Options Analyst, Futures First. Built as part of an applied
+Yuvraj Singh - Built as part of an applied
 quant/ML project series (Lopez de Prado AFML methodology).
