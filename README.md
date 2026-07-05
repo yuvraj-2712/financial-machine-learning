@@ -6,7 +6,7 @@ following the methodology of López de Prado's *Advances in Financial Machine Le
 
 ## Pipeline Stages
 
-1. **Ingestion & Cleaning** — parses raw Kibot-format tick data (`Date, Time, Price, Bid, Ask, Size`, no header), builds a datetime index, derives traded volume and dollar value per tick
+1. **Ingestion & Cleaning** — parses raw Kibot-format tick data (`Date, Time, Price, Bid, Ask, Size`, no header), builds a datetime index, and derives traded volume and dollar value per tick
 2. **Dollar Bars** — samples bars by cumulative traded dollar value rather than fixed time intervals, giving more statistically uniform bars
 3. **Fractional Differentiation** — achieves stationarity while preserving memory, via non-integer-order differencing (fitted order *d\**)
 4. **Triple-Barrier Labeling** — CUSUM filter for event sampling + triple-barrier method (profit-take / stop-loss / time-out) for label generation
@@ -61,5 +61,4 @@ quick first pass before running on the full tick history.
 ## Author
 
 Yuvraj — Quantitative Options Analyst, Futures First. Built as part of an applied
-quant/ML project series (Lopez de Prado AFML methodology) ahead of MFE program
-applications.
+quant/ML project series (Lopez de Prado AFML methodology).
